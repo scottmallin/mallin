@@ -5,9 +5,13 @@ import React from "react"
 import styled from 'styled-components'
 
 const SiteHeader = styled.header`
-  background-color: #fff;
+  @supports (backdrop-filter: saturate(180%) blur(20px)) {
+    backdrop-filter: saturate(180%) blur(20px)
+  };
+
+  background-color: rgba(var(--secondary-rgb), 0.5);
   position: sticky;
-  min-height: 50px;
+  min-height: 80px;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,7 +31,7 @@ const SiteHeader = styled.header`
 const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 1.6667rem;
   width: 100%;
 `
 
@@ -36,6 +40,14 @@ const Nav = styled.ul`
   align-items: center;
   list-style-type: none;
   margin: 0;
+
+  li {
+    text-transform: lowercase;
+
+    + li {
+      margin-left: 15px;
+    }
+  }
 `
 
 const Header = ({ siteTitle }) => (

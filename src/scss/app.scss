@@ -3,13 +3,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;700&display=swap');
 
+$primary: #8ef5cd;
+$secondary: #f4f4f4;
+$tertiary: #28262c;
+$white: #fff;
+
 :root {
+    --primary: #8ef5cd;
+    --secondary: #f4f4f4;
+        --secondary-rgb: 244, 244, 244;
+    --tertiary: #28262c;
+    --white:  #fff;
+
+    background-color: $secondary;
+    color: $tertiary;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    line-height: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .container {

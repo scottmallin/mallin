@@ -5,11 +5,20 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
+import FeatureText from "../components/featureText"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Jumbotron heading="Jumbo" />
+    <Jumbotron
+      heading="Front-end dev"
+      subheading="maybe a little too into radiohead"
+    />
+    <FeatureText>
+      <h2>
+        Some of my favourite projects
+      </h2>
+    </FeatureText>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
