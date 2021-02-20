@@ -8,18 +8,29 @@ $secondary: #f4f4f4;
 $tertiary: #28262c;
 $white: #fff;
 
-:root {
+:root body {
     --primary: #8ef5cd;
-    --secondary: #f4f4f4;
-        --secondary-rgb: 244, 244, 244;
-    --tertiary: #28262c;
+    --bg: #f4f4f4;
+        --bg-rgb: 244, 244, 244;
+    --text: #28262c;
     --white:  #fff;
+    --black: #28262c;
 
-    background-color: $secondary;
-    color: $tertiary;
+    background-color: var(--bg);
+    color: var(--text);
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.5rem;
+}
+
+:root body.dark {
+    --primary: #8ef5cd;
+    --bg: #28262c;
+        --bg-rgb: 40,38,44;
+    --text: #f4f4f4;
+
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 h1, h2, h3, h4, h5, h6 {

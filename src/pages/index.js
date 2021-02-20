@@ -6,6 +6,10 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Jumbotron from "../components/jumbotron"
 import FeatureText from "../components/featureText"
+import Projects from "../components/projects"
+import Project from "../components/project"
+
+import placeholderVid from '../images/placeholder.mp4'
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +23,12 @@ const IndexPage = () => (
         Some of my favourite projects
       </h2>
     </FeatureText>
+    <Projects>
+      <Project video={placeholderVid}></Project>
+      <Project video={placeholderVid}></Project>
+      <Project video={placeholderVid}></Project>
+      <Project></Project>
+    </Projects>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
