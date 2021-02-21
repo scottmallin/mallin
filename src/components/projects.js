@@ -4,14 +4,11 @@ import React from "react"
 
 import styled from 'styled-components'
 
-import downArrow from '../images/arrow-down-outline.svg'
-
 const Section = styled.section`
     background-color: var(--bg);
     color: var(--text);
     display: flex;
     align-items: center;
-    padding: 0 0 100px;
 `
 
 const Grid = styled.div`

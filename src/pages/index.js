@@ -24,11 +24,17 @@ const IndexPage = () => (
       </h2>
     </FeatureText>
     <Projects>
-      <Project video={placeholderVid}></Project>
-      <Project video={placeholderVid}></Project>
-      <Project video={placeholderVid}></Project>
+      <Project video={placeholderVid} name="Frank Grimes & The Disasters"></Project>
+      <Project video={placeholderVid} name="Dozytattoo"></Project>
+      <Project video={placeholderVid} name="Pokedex"></Project>
       <Project></Project>
     </Projects>
+    <FeatureText icon="beer">
+      <h2>
+        Howdy, I'm Scott. I'm a front-end developer in Yorkshire, UK.
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora delectus ullam esse modi optio consectetur quae dignissimos commodi hic distinctio.</p>
+    </FeatureText>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
